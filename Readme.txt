@@ -4,15 +4,11 @@ https://youtu.be/LssEyr8Bn_4
 **Installation of XAMPP required.**
 
 *Brief Description:
-
-	The fitness tracker website admin panel source code provides administrators with a centralized platform to 	manage various aspects of the fitness tracking system. Its purpose is to streamline administrative tasks 	related to user management, data analysis, and content management.
+	- The fitness tracker website admin panel source code provides administrators with a centralized platform to manage various aspects of the fitness tracking system. Its purpose is to streamline administrative tasks 		related to user management, data analysis, and content management.
 
 *Key Features:
-
-	1. User Management: This feature empowers administrators to comprehensively handle user accounts, including 	account creation, information updates, user deletion, and permission management.
-
-	2. Course Management: Administrators can efficiently manage website. This includes functionalities for 	adding, editing, deleting and organizing course materials.
-
+	1. User Management: This feature empowers administrators to comprehensively handle user accounts, including account creation, information updates, user deletion, and permission management.
+	2. Course Management: Administrators can efficiently manage website. This includes functionalities for adding, editing, deleting and organizing course materials.
 	3. Feedback Management: Allows administrators to update whether a feedback has been read or not.
 
 *Installation Instructions:
