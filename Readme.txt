@@ -1,4 +1,6 @@
 Admin Web Source Code for Fitness Tracker Website
+This is the link to the video presentation by our group on RESTful web services.
+https://youtu.be/LssEyr8Bn_4
 **Installation of XAMPP required.**
 
 *Brief Description:
@@ -14,11 +16,12 @@ Admin Web Source Code for Fitness Tracker Website
 	3. Feedback Management: Allows administrators to update whether a feedback has been read or not.
 
 *Installation Instructions:
-	- Step 1: Extract the REST-Fitness-Tracker.zip file into the htdocs folder of XAMPP.
-	- Step 2: Open Xampp, and then start Apache, MySQL.
-	- Step 3:Access localhost/phpmyadmin and create a new database named "canopy".
-	- Step 4:Import the file REST-Fitness-Tracker/canopy.sql and click "Run".
-	- Step 5:Open the folder REST-Fitness-Tracker and navigate to loginform.php to access the login interface.
+	- Step 1: Download the file from the following GitHub link: https://github.com/lv-ei/REST-Fitness-Tracker
+	- Step 2: Extract the REST-Fitness-Tracker.zip file into the htdocs folder of XAMPP.
+	- Step 3: Open Xampp, and then start Apache, MySQL.
+	- Step 4: Access localhost/phpmyadmin and create a new database named "canopy".
+	- Step 5: Import the file REST-Fitness-Tracker/canopy.sql and click "Run".
+	- Step 6: Open the folder REST-Fitness-Tracker and navigate to loginform.php to access the login interface.
 
 *Functions of website:
 Admin:
