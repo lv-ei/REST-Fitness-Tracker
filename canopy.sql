@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2024 at 10:33 PM
+-- Generation Time: May 19, 2024 at 11:27 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -35,7 +35,6 @@ CREATE TABLE `courses` (
   `Ctime` int(255) NOT NULL,
   `Ccate` varchar(60) NOT NULL,
   `Cdes` varchar(500) NOT NULL,
-  `Cpic` blob NOT NULL,
   `Cimg` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -43,12 +42,12 @@ CREATE TABLE `courses` (
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`Cid`, `Cname`, `Cexercise`, `Clink`, `Ctime`, `Ccate`, `Cdes`, `Cpic`, `Cimg`) VALUES
-(4, 'OVERVIEW OF MUSCLE GAIN AND NUTRITION', 0, 'weight_loss_b.html', 504, 'Weight loss', '', '', ''),
-(5, 'EFFECTIVE TRAINING PROGRAM FOR MUSCLE GAIN', 0, 'weight_loss_b.html', 720, 'Weight loss', '', '', ''),
-(6, 'MEAL PLANNING AND DAILY CALORIE TRACKING', 0, 'muscle_gain_b.html', 840, 'Muscle gain', '', '', ''),
-(8, 'MUSCLE TRAINING TECHNIQUES', 12, 'body_building_b.html', 6, 'Body building', '', '', ''),
-(9, 'MUSCLE TRAINING PLANNING', 7, 'body_building_b.html', 840, 'Body building', '', '', '');
+INSERT INTO `courses` (`Cid`, `Cname`, `Cexercise`, `Clink`, `Ctime`, `Ccate`, `Cdes`, `Cimg`) VALUES
+(4, 'OVERVIEW OF MUSCLE GAIN AND NUTRITION', 0, 'weight_loss_b.html', 504, 'Weight loss', '', ''),
+(5, 'EFFECTIVE TRAINING PROGRAM FOR MUSCLE GAIN', 0, 'weight_loss_b.html', 720, 'Weight loss', '', ''),
+(6, 'MEAL PLANNING AND DAILY CALORIE TRACKING', 0, 'muscle_gain_b.html', 840, 'Muscle gain', '', ''),
+(8, 'MUSCLE TRAINING TECHNIQUES', 12, 'body_building_b.html', 6, 'Body building', '', ''),
+(9, 'MUSCLE TRAINING PLANNING', 7, 'body_building_b.html', 840, 'Body building', '', '');
 
 -- --------------------------------------------------------
 
