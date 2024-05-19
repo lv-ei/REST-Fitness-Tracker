@@ -1,0 +1,16 @@
+/* Áp dụng cho button có name là "mark_read" */
+button[name="mark_read"] {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745; /* Màu xanh da trời */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+/* Hiệu ứng hover cho button có name là "mark_read" */
+button[name="mark_read"]:hover {
+    background-color: #218838;
+}
