@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Add new course</title>
+    <title>Add New Course</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,20 +31,20 @@
             margin: 0 auto;
         }
 
-        .admin-sidebar {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            max-width: 250px;
-        }
-
+        .admin-sidebar,
         .admin-content {
             background: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-sidebar {
+            flex: 1;
+            max-width: 250px;
+        }
+
+        .admin-content {
             flex: 3;
             margin-left: 20px;
         }
@@ -128,7 +128,7 @@
                 </div>
                 <div class="admin-sidebar-content">
                     <ul>
-                        <li><a href=""><i class="ri-dashboard-line"></i>Dashboard<i class="ri-add-box-line"></i></a>
+                        <li><a href="#"><i class="ri-dashboard-line"></i>Dashboard<i class="ri-add-box-line"></i></a>
                             <ul class="sub-menu">
                                 <div class="sub-menu-item">
                                     <li><a href="list.php"><i class="ri-arrow-right-s-fill"></i>User List</a></li>
@@ -137,7 +137,7 @@
                                 </div>
                             </ul>
                         </li>
-                        <li><a href=""><i class="ri-file-list-line"></i>Manage Courses<i
+                        <li><a href="#"><i class="ri-file-list-line"></i>Manage Courses<i
                                     class="ri-add-box-line"></i></a>
                             <ul class="sub-menu">
                                 <div class="sub-menu-item">
@@ -157,42 +157,38 @@
                         <H1>ADD NEW COURSE</H1>
                     </div>
                     <div class="admin-content-main-content">
-                        <!-- Nội dung nằm ở đây -->
-                        <div class="admin-content-main-content-product-add">
-                            <div class="admin-content-main">
-                                <form id="add-course-form">
-                                    <div class="form-group">
-                                        <input type="text" name="cname" id="cname" placeholder="Course name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="cexcercise" id="cexcercise"
-                                            placeholder="Number of exercises">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="ctime" id="ctime" placeholder="Exercise Duration">
-                                    </div>
-                                    <div class="form-group">
-                                        <select name="ccate" id="ccate">
-                                            <option value="" disabled selected>Select Category</option>
-                                            <option value="Weight loss">Weight loss</option>
-                                            <option value="Muscle gain">Muscle gain</option>
-                                            <option value="Body building">Body building</option>
-                                            <option value="Relaxing">Relaxing</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="editor_content" name="cdes" id="cdes"
-                                            placeholder="Description"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <input type="file" id="file" name="cimg">
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="main-btn" type="button" id="add-course-btn">Add course</button>
-                                    </div>
-                                </form>
-                            </div>
+                        <div class="admin-content-main">
+                            <form id="add-course-form" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <input type="text" name="cname" id="cname" placeholder="Course name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="cexcercise" id="cexcercise"
+                                        placeholder="Number of exercises" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="ctime" id="ctime" placeholder="Exercise Duration" required>
+                                </div>
+                                <div class="form-group">
+                                    <select name="ccate" id="ccate" required>
+                                        <option value="" disabled selected>Select Category</option>
+                                        <option value="Weight loss">Weight loss</option>
+                                        <option value="Muscle gain">Muscle gain</option>
+                                        <option value="Body building">Body building</option>
+                                        <option value="Relaxing">Relaxing</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="editor_content" name="cdes" id="cdes" placeholder="Description"
+                                        required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" id="file" name="file" required>
+                                </div>
+                                <div class="form-group">
+                                    <button class="main-btn" type="button" id="add-course-btn">Add course</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -201,18 +197,10 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
-
     <script>
         $(document).ready(function () {
             $('#add-course-btn').click(function () {
-                var formData = new FormData();
-                formData.append('cname', $('#cname').val());
-                formData.append('cexcercise', $('#cexcercise').val());
-                formData.append('ctime', $('#ctime').val());
-                formData.append('ccate', $('#ccate').val());
-                formData.append('cdes', $('#cdes').val());
-                formData.append('file', $('#file')[0].files[0]);
+                var formData = new FormData($('#add-course-form')[0]);
 
                 $.ajax({
                     url: 'api/add_course.php',
@@ -221,7 +209,8 @@
                     contentType: false,
                     processData: false,
                     success: function (response) {
-                        alert(response.message);
+                        var res = JSON.parse(response);
+                        alert(res.message);
                     },
                     error: function (error) {
                         alert('Error adding course.');
