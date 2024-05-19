@@ -17,10 +17,10 @@ https://youtu.be/LssEyr8Bn_4
 
 *Installation Instructions:
 	- Step 1: Download the file from the following GitHub link: https://github.com/lv-ei/REST-Fitness-Tracker
-	- Step 2: Extract the REST-Fitness-Tracker.zip file into the htdocs folder of XAMPP.
+	- Step 2: Extract the REST-Fitness-Tracker-main.zip file into the htdocs folder of XAMPP.
 	- Step 3: Open Xampp, and then start Apache, MySQL.
 	- Step 4: Access localhost/phpmyadmin and create a new database named "canopy".
-	- Step 5: Import the file REST-Fitness-Tracker/canopy.sql and click "Run".
+	- Step 5: Import the file REST-Fitness-Tracker-main/canopy.sql and click "Run".
 	- Step 6: Open the folder REST-Fitness-Tracker and navigate to loginform.php to access the login interface.
 
 *Functions of website:
